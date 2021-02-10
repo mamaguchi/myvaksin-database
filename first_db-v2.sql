@@ -55,6 +55,15 @@ create table kkm.vaccine
 
     unique(brand, type, against)
   );
+    
+drop type if exists aefi_class_t cascade;
+create type aefi_class_t as enum('None', 'Vaccine-Related', 'Immunization-Error-Related', 
+  'Immunization-Anxiety-Related', 'Coincidental-Events');
+
+drop type if exists aefi_reaction_t cascade;
+create type aefi_reaction_t as enum('', 'Mild', 'Severe', 'Non-Sterile Injection', 
+  'Vaccine Transport/Storage Error', 'Reconstitution Error', 'Injection At Incorrect Site',
+  'Contraindication Ignored', 'Fainting', 'Hyperventilation', 'Vomiting', 'Convulsion');
 
 drop table if exists kkm.vaccination cascade;
 create table kkm.vaccination
@@ -67,27 +76,12 @@ create table kkm.vaccination
     first_adm boolean not null,
     first_dose_dt timestamp,
     second_dose_dt timestamp,
-    aefi_class integer[],
-    aefi_reaction integer[],
+    aefi_class aefi_class_t not null,
+    aefi_reaction aefi_reaction_t[],
+    remarks text,
 
     unique(vaccine, people)
   );
-
-drop table if exists kkm.aefi_class cascade;
-create table kkm.aefi_class
-  (
-    id serial primary key,
-    code integer not null,
-    class text not null
-  );
   
-drop table if exists kkm.aefi_reaction cascade;
-create table kkm.aefi_reaction
-  (
-    id serial primary key,
-    code integer not null,
-    reaction text not null
-  );
-    
 
 commit;
