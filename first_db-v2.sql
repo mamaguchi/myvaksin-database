@@ -15,6 +15,24 @@ create type nationality_t as enum('Warganegara', 'Bukan Warganegara');
 drop type if exists edu_lvl_t cascade;
 create type edu_lvl_t as enum('Primary', 'Secondary', 'Tertiary');
 
+drop type if exists state_t cascade;
+create type state_t as enum(
+	'Perlis',
+        'Kedah',
+        'Pulau Pinang',
+        'Perak',
+        'Selangor',
+        'Kuala Lumpur',
+        'Negeri Sembilan',
+        'Melaka',
+        'Johor',
+        'Kelantan',
+        'Terengganu',
+        'Pahang',
+        'Sabah',
+        'Sarawak',
+        'Pulau Labuan');
+
 drop table if exists kkm.people cascade;
 create table kkm.people
   (
@@ -25,7 +43,11 @@ create table kkm.people
     nationality nationality_t not null,
     race race_t not null,
     tel text,
-    address text not null,        
+    address text not null, 
+    postalCode text,
+    locality text not null,
+    district text not null,
+    state state_t not null,       
     edu_lvl edu_lvl_t not null,
     occupation text not null,
     comorbids integer[],
