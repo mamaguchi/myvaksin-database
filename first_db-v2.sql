@@ -99,7 +99,7 @@ create table kkm.vaccination
     first_dose_dt timestamp,
     second_dose_dt timestamp,
     aefi_class aefi_class_t not null,
-    aefi_reaction aefi_reaction_t[],
+    aefi_reaction text[],
     remarks text,
 
     unique(vaccine, people)

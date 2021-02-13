@@ -23,8 +23,9 @@ insert into kkm.people(ident, name, gender, dob, nationality, race,
 insert into kkm.vaccine(brand, type, against, raoa, price, num_dose, efficacy) 
   values ('Pfizer-BioNTech', 'RNA', 'SARS-CoV-2', 'N/A', 100.00, 2, 97),  
          ('Astra-Zeneca', 'Adenovirus Vector', 'SARS-CoV-2', 'N/A', 100.00, 2, 97),
-         ('Pfizer-BioNTech', 'Inactivated SARS-CoV-2', 'SARS-CoV-2', 'N/A', 100.00, 2, 97),
-         ('Pfizer-BioNTech', 'Adenovirus Vector', 'SARS-CoV-2', 'N/A', 100.00, 2, 97);    
+         ('Sinovac', 'Inactivated SARS-CoV-2', 'SARS-CoV-2', 'N/A', 100.00, 2, 97),
+         ('Sputnik', 'Adenovirus Vector', 'SARS-CoV-2', 'N/A', 100.00, 2, 97),
+         ('HepB-Vaccine', 'some-type', 'HepB-Virus', 'At Birth', 10.00, 3, 99);  
          
 
 commit;

@@ -13,7 +13,10 @@ insert into kkm.vaccination(vaccine, people, vaccination, aoa, first_adm,
          '{"Non-Sterile Injection"}', 'Staff didnt follow sterile technique'),
          (4, '880601105152', 'COVID-19', '30 y/o', 'yes',
          timestamp '2021-08-04', timestamp '2021-08-26', 'Coincidental-Events', 
-         '{""}', 'Infant death');         
+         '{""}', 'Infant death'),
+         (5, '880601105149', 'HepB', 'At Birth', 'yes',
+         timestamp '1988-06-01', timestamp '1988-08-26', 'Vaccine-Related', 
+         '{"Mild"}', 'Mild itch');         
 
 
 commit;
