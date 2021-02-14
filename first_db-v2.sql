@@ -43,15 +43,16 @@ create table kkm.people
     nationality nationality_t not null,
     race race_t not null,
     tel text,
+    email text,
     address text not null, 
     postalCode text,
     locality text not null,
     district text not null,
     state state_t not null,       
-    edu_lvl edu_lvl_t not null,
+    eduLvl edu_lvl_t not null,
     occupation text not null,
     comorbids integer[],
-    support_vac boolean not null,
+    supportVac boolean not null,
 
     unique(ident)
   );
@@ -94,12 +95,11 @@ create table kkm.vaccination
     vaccine bigint not null references kkm.vaccine(id),
     people text not null references kkm.people(ident),
     vaccination text not null,
-    aoa text not null,
-    first_adm boolean not null,
-    first_dose_dt timestamp,
-    second_dose_dt timestamp,
-    aefi_class aefi_class_t not null,
-    aefi_reaction text[],
+    firstAdm boolean not null,
+    firstDoseDt timestamp,
+    secondDoseDt timestamp,
+    aefiClass aefi_class_t not null,
+    aefiReaction text[],
     remarks text,
 
     unique(vaccine, people)

@@ -1,0 +1,43 @@
+==================
+Created: 12Feb2021
+==================
+myvaksin: TODO
+- Add comorbids field to People page.
+- Add people picture upload field to People page.
+- Add '3rd/Booster Dose' field to the Edit/New form for 
+  vaccination table of People page.
+- Add 'saving...' & 'saved' status to the toolbar of 
+  vaccination table of People page.
+- Add 'PastCOVID19Infection' boolean field to People.
+- Adjust the look and size of the page footer.
+- Add multi-criteria search feature to People Search page.
+- Add a toast-like notification upon successful People 
+  profile update on People Detail page.
+- In PeopleDetail page, change the AOSA back to readonly 
+  v-text-field.
+- Try converting all PostgreSQL 'timestamp' type to 'date' type.
+- Add retry-loop-on-fail to all Axios http call.
+
+
+
+
+
+
+
+
+
+
+
+=====
+Extra
+=====
+1.  How to send TAC code?
+2.  Apply TAC code to my applications
+
+
+
+
+================
+Pending Thoughts
+================
+
