@@ -43,4 +43,6 @@ Pending Thoughts
 1.  auto detect dob from given ic if it's an ic.
 2.  auto capitalise the first letter of the name appearing at 
     pic section of people profile
+3.  add different SignUp status to the http api call so that 
+    fe can display different message accordingly.
 
