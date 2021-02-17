@@ -17,6 +17,9 @@ myvaksin: TODO
   v-text-field.
 - Try converting all PostgreSQL 'timestamp' type to 'date' type.
 - Add retry-loop-on-fail to all Axios http call.
+- [Golang] Is it possible to use json.Encoder() to write the 
+  webservice response straight to http.ResponseWriter without 
+  having first to convert the response to the intermediary json []byte?
 
 
 
@@ -45,4 +48,7 @@ Pending Thoughts
     pic section of people profile
 3.  add different SignUp status to the http api call so that 
     fe can display different message accordingly.
+4.  Add VerifyToken function to every webservice api call.
+5.  Adjust the look of AppBar
+6.  Add Nginx reverse proxy
 
