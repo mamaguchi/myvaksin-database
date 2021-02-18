@@ -46,6 +46,10 @@ Pending Thoughts
 4.  Add VerifyToken function to every webservice api call.
 5.  Adjust the look of AppBar
 6.  Add Nginx reverse proxy
+7.  Either to make 'password' field nullable at DB level and create 
+    a not-null check at frontend level, or 
+    Make 'password' field not-null at DB level and create a default 
+    password for every new profile created by myvaksin provider.
 
 
 
