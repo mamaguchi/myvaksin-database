@@ -3,10 +3,10 @@ Created: 12Feb2021
 ==================
 myvaksin: TODO
 - Add comorbids field to People page.
-- Add people picture upload field to People page.
+[*]- Add people picture upload field to People page.
 - Add '3rd/Booster Dose' field to the Edit/New form for 
   vaccination table of People page.
-- Add 'saving...' & 'saved' status to the toolbar of 
+[*]- Add 'saving...' & 'saved' status to the toolbar of 
   vaccination table of People page.
 - Add 'PastCOVID19Infection' boolean field to People.
 - Adjust the look and size of the page footer.
@@ -17,13 +17,14 @@ myvaksin: TODO
   v-text-field.
 - Try converting all PostgreSQL 'timestamp' type to 'date' type.
 - Add retry-loop-on-fail to all Axios http call.
-- [Golang] Is it possible to use json.Encoder() to write the 
+- [Golang] Is it possible to use json.Encoder() to WRITE the 
   webservice response straight to http.ResponseWriter without 
   having first to convert the response to the intermediary json []byte?
 - To compress the ProfilePicData base64 encoded image before 
   storing it to database, and to decompress it upon reading it back
   from database.
-
+- On PeopleSearch page, add a column to the search result that shows 
+  the status COVID vaccination status.
 
 
 
@@ -43,16 +44,17 @@ Pending Thoughts
 1.  auto detect dob from given ic if it's an ic.
 2.  auto capitalise the first letter of the name appearing at 
     pic section of people profile
-3.  add different SignUp status to the http api call so that 
+[*]3.  add different SignUp status to the http api call so that 
     fe can display different message accordingly.
 4.  Add VerifyToken function to every webservice api call.
-5.  Adjust the look of AppBar
-6.  Add Nginx reverse proxy
-7.  Either to make 'password' field nullable at DB level and create 
+[*]5.  Adjust the look of AppBar
+[*]6.  Add Nginx reverse proxy
+[*]7.  Either to make 'password' field nullable at DB level and create 
     a not-null check at frontend level, or 
     Make 'password' field not-null at DB level and create a default 
     password for every new profile created by myvaksin provider.
-
+8. Add a url rewrite in Nginx config so that we can restrict 
+   'Access-Control-Allow-Origin' header.
 
 
 
