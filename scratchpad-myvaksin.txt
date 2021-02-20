@@ -25,7 +25,7 @@ myvaksin: TODO
   from database.
 - On PeopleSearch page, add a column to the search result that shows 
   the status COVID vaccination status.
-
+- Adjust the footer
 
 
 
