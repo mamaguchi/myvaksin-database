@@ -20,7 +20,9 @@ myvaksin: TODO
 - [Golang] Is it possible to use json.Encoder() to write the 
   webservice response straight to http.ResponseWriter without 
   having first to convert the response to the intermediary json []byte?
-
+- To compress the ProfilePicData base64 encoded image before 
+  storing it to database, and to decompress it upon reading it back
+  from database.
 
 
 

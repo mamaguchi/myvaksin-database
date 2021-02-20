@@ -54,7 +54,7 @@ create table kkm.people
     comorbids integer[],
     supportvac boolean,
     password text not null,
-    profilepic bytea,
+    profilepic text,
 
     unique(ident)
   );
