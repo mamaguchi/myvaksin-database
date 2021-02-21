@@ -66,6 +66,16 @@ Pending Thoughts
 
 
 
+=====
+Notes
+=====
+1. PostgreSQL 
+   - It is ok to get from PostgreSQL timestamp value using pgx and
+   Golang time.Time type, but it will fail when pgx is used to set PostgreSQL 
+   timestamp value using Golang time.Time type.
+   - It is ok to get and set PostgreSQL timestamp value using pgx and 
+   Golang time.Time type.
+
 ============================================================
 LetsEncrypt - Certbot Verification to Obtain SSL Certificate
 ============================================================
