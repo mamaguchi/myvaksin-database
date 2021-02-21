@@ -55,6 +55,13 @@ Pending Thoughts
     password for every new profile created by myvaksin provider.
 8. Add a url rewrite in Nginx config so that we can restrict 
    'Access-Control-Allow-Origin' header.
+9. Add a one way hashing function to hash the user password and 
+   store it on the database instead of the original password.
+10. Reduce the z-index of the profile pic on PeopleDetail page 
+    because it's overlapping the AppBar when AppBar reappear 
+    during scrolling up from bottom of the page.
+11. Limit PeopleSearch page to role Administrator, Recruiter & Provider only.
+    Receiver role should see only PeopleDetail page.         
 
 
 
