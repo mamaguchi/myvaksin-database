@@ -1,0 +1,14 @@
+PROBLEMS
+========
+1. 22/2/2021
+*-  A new person with existing profiler is unable to sign up 
+   new account. Check the SignUp function in ws.
+*-  A receiver upon signing in and when navigating to People page, 
+   'ident' and 'isNewProfile' is not set during navigation.
+-  Need to separate different type of ws server response error.
+   Some error should'nt just straight away logout the user.
+-  To verify the firstDoseDt is behind the current date before 
+   counting it as taken.
+*-  Age and age range filter are not working.
+-  Loading spinner won't stop spinning if bad input error causes
+   server to give error response.
