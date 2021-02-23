@@ -62,7 +62,17 @@ Pending Thoughts
     during scrolling up from bottom of the page.
 11. Limit PeopleSearch page to role Administrator, Recruiter & Provider only.
     Receiver role should see only PeopleDetail page.         
-
+12. Add a shortcut feature for myvaksin provider at PeopleSearch page to
+    access COVID-19 vaccination records data-table by clicking at the 
+    'COVID-19 Immun. Status' icon.
+    KIV to complement this feature with QR code, where receiver present
+    the QR code for provider to scan and then the receiver profile and 
+    vaccination record page will appear automatically. Purpose is to 
+    ease and speed up provider workflow.
+13. To have a separate aefiClass & aefiReaction fields for 1st, 2nd & subsequent
+    doses.
+14. To have a separate select of vaccine type for each doses.
+15. Add new vaccination application notification.
 
 
 
