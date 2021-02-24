@@ -73,7 +73,9 @@ Pending Thoughts
     doses.
 14. To have a separate select of vaccine type for each doses.
 15. Add new vaccination application notification.
- 
+16. Add a refresh feature to PeopleSearch page after each add/edit/delete changes of
+    vaccination record on the same page. (may be try emitting event of change 
+    from the edit dialog child component to the parent PoepleSearch page)
 
 
 =====
