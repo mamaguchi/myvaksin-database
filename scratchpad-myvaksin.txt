@@ -73,7 +73,7 @@ Pending Thoughts
     doses.
 14. To have a separate select of vaccine type for each doses.
 15. Add new vaccination application notification.
-
+ 
 
 
 =====
