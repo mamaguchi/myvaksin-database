@@ -76,6 +76,17 @@ Pending Thoughts
 16. Add a refresh feature to PeopleSearch page after each add/edit/delete changes of
     vaccination record on the same page. (may be try emitting event of change 
     from the edit dialog child component to the parent PoepleSearch page)
+17. Should i make the ic/passport field in PeopleDetail page immutable?
+    A change or mistake in ic/passport will make the user unable to view their
+    own profile or accidentally view other people profile if they register 
+    an account with the wrong ic/passport.
+    (SOLUTION: May be i should link the ic/passport field on the PeopleDetail page
+    to the user accound ic/passport and make this field immutable?)
+18. Add constraint to the VacRec Add/Edit dialog.    
+    
+        
+    
+    
 
 
 =====

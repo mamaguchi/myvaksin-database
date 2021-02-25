@@ -87,7 +87,7 @@ create table kkm.vaccine
   );
     
 drop type if exists aefi_class_t cascade;
-create type aefi_class_t as enum('', 'None', 'Vaccine-Related', 'Immunization-Error-Related', 
+create type aefi_class_t as enum('None', 'Vaccine-Related', 'Immunization-Error-Related', 
   'Immunization-Anxiety-Related', 'Coincidental-Events');
 
 drop type if exists aefi_reaction_t cascade;
